@@ -3226,25 +3226,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 50523544117659582, guid: 9c77a34967d9e5a448764bde7de7963f,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 70814636096387820, guid: 9c77a34967d9e5a448764bde7de7963f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.12
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.57
+      value: 2.48
       objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
@@ -3295,6 +3285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530463027729208140, guid: 9c77a34967d9e5a448764bde7de7963f,
+        type: 3}
+      propertyPath: runSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c77a34967d9e5a448764bde7de7963f, type: 3}
