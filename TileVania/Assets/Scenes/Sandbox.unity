@@ -2002,7 +2002,7 @@ GameObject:
   - component: {fileID: 1355168929}
   - component: {fileID: 1355168928}
   - component: {fileID: 1355168927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3226,6 +3226,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 50523544117659582, guid: 9c77a34967d9e5a448764bde7de7963f,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3290,6 +3295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: runSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530463027729208140, guid: 9c77a34967d9e5a448764bde7de7963f,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c77a34967d9e5a448764bde7de7963f, type: 3}

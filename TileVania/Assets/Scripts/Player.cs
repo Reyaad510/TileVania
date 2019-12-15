@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     // Cached component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
+    Collider2D myCollider2D;
 
 
 
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
         // cache Rigidbody
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myCollider2D = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,11 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
+        // Made Foreground GameObject have a Layer called "Ground"
+        // Then saying if our character is not touching anything that has that "Ground" Layer(in our case any foreground elements) then he can't jump.
+        // Prevent jumping continously in the air over and over again
+        if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
