@@ -5,15 +5,24 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
-    Rigidbody2D myRigidBody;
-
+    // Config
     [SerializeField] float runSpeed = 5f;
+
+    // State
+    bool isAlive = true;
+
+    // Cached component references
+    Rigidbody2D myRigidBody;
+    Animator myAnimator;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         // cache Rigidbody
-        myRigidBody = GetComponent<Rigidbody2D>();   
+        myRigidBody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,6 +40,13 @@ public class Player : MonoBehaviour
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
 
+        // Using this so can switch from idle animation to running if we are running
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+
+        // if running playerHasHorizontalSpeed will be true, else it will be false
+        myAnimator.SetBool("Running", playerHasHorizontalSpeed);
+
+        
     }
 
 
