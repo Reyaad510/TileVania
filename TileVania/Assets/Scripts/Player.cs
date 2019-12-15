@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
     // Cached component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
-    Collider2D myCollider2D;
+    CapsuleCollider2D myBodyCollider;
+    BoxCollider2D myFeet;
     float gravityScaleAtStart;
 
 
@@ -27,7 +28,8 @@ public class Player : MonoBehaviour
         // cache Rigidbody
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        myCollider2D = GetComponent<Collider2D>();
+        myBodyCollider = GetComponent<CapsuleCollider2D>();
+        myFeet = GetComponent<BoxCollider2D>();
         gravityScaleAtStart = myRigidBody.gravityScale;
     }
 
@@ -59,7 +61,7 @@ public class Player : MonoBehaviour
 
     private void Climbing()
     {
-        if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
             myAnimator.SetBool("Climbing", false);
             myRigidBody.gravityScale = gravityScaleAtStart;
@@ -82,7 +84,7 @@ public class Player : MonoBehaviour
         // Made Foreground GameObject have a Layer called "Ground"
         // Then saying if our character is not touching anything that has that "Ground" Layer(in our case any foreground elements) then he can't jump.
         // Prevent jumping continously in the air over and over again
-        if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
