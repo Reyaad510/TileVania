@@ -107,4 +107,5 @@ public class Player : MonoBehaviour
 
 
     // collision detection on player object change to continous. More expensive but if you dont for faster paced games will fall through ground
+    // To add camera shake bring in cinemachine virtual cam and look for "Noise" tab. Have fun xD 
 }
