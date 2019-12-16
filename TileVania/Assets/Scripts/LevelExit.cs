@@ -12,6 +12,7 @@ public class LevelExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Touched");
         StartCoroutine(LoadNextLevel());
     }
 
@@ -22,6 +23,7 @@ public class LevelExit : MonoBehaviour
         Time.fixedDeltaTime = 0.02F * Time.timeScale;
 
         yield return new WaitForSecondsRealtime(waitToLoad);
+
         // Slowmo gone when next level starts up
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02F;
