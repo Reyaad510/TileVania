@@ -105,6 +105,8 @@ public class Player : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             GetComponent<Rigidbody2D>().velocity = deathKick;
+            // when enemy touch enemy, the player will lose life and reset
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
 
         }
     }
