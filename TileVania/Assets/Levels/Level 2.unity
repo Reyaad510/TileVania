@@ -16750,11 +16750,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1570158690, guid: 83897507352639e41ba13e610de70147, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.355623
+      value: -18.73562
       objectReference: {fileID: 0}
     - target: {fileID: 1570158690, guid: 83897507352639e41ba13e610de70147, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37475204
+      value: -0.2847519
       objectReference: {fileID: 0}
     - target: {fileID: 1570158691, guid: 83897507352639e41ba13e610de70147, type: 3}
       propertyPath: m_BoundingShape2D
@@ -16766,11 +16766,11 @@ PrefabInstance:
       objectReference: {fileID: 827415352}
     - target: {fileID: 1661860627, guid: 83897507352639e41ba13e610de70147, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.355623
+      value: -18.73562
       objectReference: {fileID: 0}
     - target: {fileID: 1661860627, guid: 83897507352639e41ba13e610de70147, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37475204
+      value: -0.2847519
       objectReference: {fileID: 0}
     - target: {fileID: 1661860628, guid: 83897507352639e41ba13e610de70147, type: 3}
       propertyPath: m_BoundingShape2D
@@ -16783,7 +16783,7 @@ PrefabInstance:
     - target: {fileID: 393352161763611228, guid: 83897507352639e41ba13e610de70147,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 554548775992913987, guid: 83897507352639e41ba13e610de70147,
         type: 3}
@@ -16813,12 +16813,12 @@ PrefabInstance:
     - target: {fileID: 1537836710133388206, guid: 83897507352639e41ba13e610de70147,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.355623
+      value: -18.73562
       objectReference: {fileID: 0}
     - target: {fileID: 1537836710133388206, guid: 83897507352639e41ba13e610de70147,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37475204
+      value: -0.2847519
       objectReference: {fileID: 0}
     - target: {fileID: 1537836710133388206, guid: 83897507352639e41ba13e610de70147,
         type: 3}
@@ -16843,12 +16843,12 @@ PrefabInstance:
     - target: {fileID: 3018570196154625889, guid: 83897507352639e41ba13e610de70147,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.681053
+      value: -11.4706955
       objectReference: {fileID: 0}
     - target: {fileID: 3018570196154625889, guid: 83897507352639e41ba13e610de70147,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4840698
+      value: 3.584128
       objectReference: {fileID: 0}
     - target: {fileID: 3936128592872062983, guid: 83897507352639e41ba13e610de70147,
         type: 3}
@@ -16939,31 +16939,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 998862607, guid: 9c77a34967d9e5a448764bde7de7963f, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.051179886
-      objectReference: {fileID: 0}
-    - target: {fileID: 998862607, guid: 9c77a34967d9e5a448764bde7de7963f, type: 3}
-      propertyPath: m_Size.x
-      value: 0.30700302
-      objectReference: {fileID: 0}
-    - target: {fileID: 998862607, guid: 9c77a34967d9e5a448764bde7de7963f, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.39083612
-      objectReference: {fileID: 0}
-    - target: {fileID: 998862607, guid: 9c77a34967d9e5a448764bde7de7963f, type: 3}
-      propertyPath: m_Size.y
-      value: 0.039734125
-      objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.67
+      value: 94.29
       objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.64
+      value: 4.73
       objectReference: {fileID: 0}
     - target: {fileID: 5397316777173661414, guid: 9c77a34967d9e5a448764bde7de7963f,
         type: 3}
